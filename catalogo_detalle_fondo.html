@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script type="text/javascript">
+         var screen_width = 320;
+ var screen_height = 480;
+        </script>
+        <title>
+            catalogo_detalle_fondo
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="files/resources/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.min.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript">
+        		        $(document).bind("mobileinit", function()
+		        {
+		            if (navigator.userAgent.indexOf("Android") != -1)
+		            {
+		                $.mobile.defaultPageTransition = 'none';
+		                $.mobile.defaultDialogTransition = 'none';
+		            }
+		        });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/tiggzi.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="catalogo_detalle_fondo" id="j_15"
+        class="type-interior" data-theme='a' data-add-back-btn="true" data-back-btn-text="atrás">
+            <div data-role="header" data-position='fixed' data-theme='a' name="mobileheader"
+            id="j_2" class='mobileHeader mobileheader2 '>
+                <h1 dsid="mobileheader">
+                    Fondo
+                </h1>
+            </div>
+            <div data-role="content" id="j_3" name="mobilecontainer" class="mobileContent mobilecontainer2"
+            dsid="mobilecontainer" data-theme='a'>
+                <link href="catalogo_detalle_fondo.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="catalogo_detalle_fondo.js">
+                </script>
+                <div class="mobileimage2_div">
+                    <img class="mobileImage mobileimage2" src="files/views/assets/image/8F410DD4-90AF-D37E-478D-91CBFB2FFDDC"
+                    id="j_16" dsid="mobileimage_2" name="mobileimage_2" />
+                </div>
+                <div name="mobilelabel1_3" id="j_17" dsid="mobilelabel1_3" data-role="tiggr_label"
+                class='labelClass mobilelabel4 '>
+                    Model: MW1-10186-092 / ISA: 8172.20
+                </div>
+                <div name="mobilelabel1_5" id="j_18" dsid="mobilelabel1_5" data-role="tiggr_label"
+                class='labelClass mobilelabel5 '>
+                    Precio: US$ 475
+                </div>
+                <div data-role="fieldcontain" class=" mobilecheckboxgroup1" id="j_19" dsid="mobilecheckboxgroup1_10">
+                    <fieldset data-role="controlgroup">
+                        <span dsid="mobilecheckbox1_11" class="mobilecheckbox1">
+                            <input type="checkbox" name="j_20" id="j_20" tabIndex="1" data-theme='a' value="Item 1"
+                            />
+                            <label id="j_20_label" for="j_20">
+                                <div name="mobilelabel1_14" id="j_21" dsid="mobilelabel1_14" data-role="tiggr_label"
+                                class='labelClass mobilelabel6 '>
+                                    Comprar / (Van: $ 11.755)
+                                </div>
+                            </label>
+                        </span>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

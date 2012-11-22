@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script type="text/javascript">
+         var screen_width = 320;
+ var screen_height = 480;
+        </script>
+        <title>
+            verpedido
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="files/resources/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.min.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript">
+        		        $(document).bind("mobileinit", function()
+		        {
+		            if (navigator.userAgent.indexOf("Android") != -1)
+		            {
+		                $.mobile.defaultPageTransition = 'none';
+		                $.mobile.defaultDialogTransition = 'none';
+		            }
+		        });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/tiggzi.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="verpedido" id="j_49" class="type-interior"
+        data-theme='a' data-add-back-btn="true" data-back-btn-text="atrás">
+            <div data-role="header" data-position='fixed' data-theme='a' name="mobileheader"
+            id="j_2" class='mobileHeader mobileheader6 '>
+                <h1 dsid="mobileheader">
+                    Pedido en Curso
+                </h1>
+            </div>
+            <div data-role="content" id="j_3" name="mobilecontainer" class="mobileContent mobilecontainer6"
+            dsid="mobilecontainer" data-theme='a'>
+                <link href="verpedido.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="verpedido.js">
+                </script>
+                <div name="mobilelabel1_6" id="j_50" dsid="mobilelabel1_6" data-role="tiggr_label"
+                class='labelClass mobilelabel11 '>
+                    Total Compra: $ 11.755 / Pzs: 23
+                </div>
+                <div class="mobilegrid2_wrapper">
+                    <table id="j_51" class="mobilegrid mobilegrid2" dsid="mobilegrid_37" name="mobilegrid_37"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:10%;">
+                            <col style="width:auto;">
+                                <tr class="mobilegrid2_row_0">
+                                    <td id="j_52" name="mobilegridcell_38" class="mobilegridcell3" colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <div name="mobilelabel1_57" id="j_53" dsid="mobilelabel1_57" data-role="tiggr_label"
+                                            class='labelClass mobilelabel12 '>
+                                                1
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="j_58" name="mobilegridcell_44" class="mobilegridcell6" colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <div class="mobilegrid3_wrapper">
+                                                <table id="j_59" class="mobilegrid mobilegrid3" dsid="mobilegrid_13" name="mobilegrid_13"
+                                                cellpadding=0 cellspacing=0>
+                                                    <col style="width:auto;">
+                                                        <col style="width:35%;">
+                                                            <tr class="mobilegrid3_row_0">
+                                                                <td id="j_60" name="mobilegridcell_14" class="mobilegridcell7" colspan=1 rowspan=1>
+                                                                    <div class="cell-wrapper">
+                                                                        <div class="mobilegrid4_wrapper">
+                                                                            <table id="j_61" class="mobilegrid mobilegrid4" dsid="mobilegrid_30" name="mobilegrid_30"
+                                                                            cellpadding=0 cellspacing=0>
+                                                                                <col style="width:50%;">
+                                                                                    <tr class="mobilegrid4_row_0">
+                                                                                        <td id="j_62" name="mobilegridcell_31" class="mobilegridcell8" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div class="mobileimage5_div">
+                                                                                                    <img class="mobileImage mobileimage5" src="files/views/assets/image/BB046B88-58D6-6429-C03E-C4D3B86CA3D3"
+                                                                                                    id="j_63" dsid="mobileimage_35" name="mobileimage_35" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="mobilegrid4_row_1">
+                                                                                        <td id="j_64" name="mobilegridcell_33" class="mobilegridcell9" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div name="mobilelabel1_24" id="j_65" dsid="mobilelabel1_24" data-role="tiggr_label"
+                                                                                                class='labelClass mobilelabel15 '>
+                                                                                                    MW1-29785-122
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="j_66" name="mobilegridcell_15" class="mobilegridcell10" colspan=1 rowspan=1>
+                                                                    <div class="cell-wrapper">
+                                                                        <div class="mobilegrid5_wrapper">
+                                                                            <table id="j_67" class="mobilegrid mobilegrid5" dsid="mobilegrid_19" name="mobilegrid_19"
+                                                                            cellpadding=0 cellspacing=0>
+                                                                                <col style="width:50%;">
+                                                                                    <tr class="mobilegrid5_row_0">
+                                                                                        <td id="j_68" name="mobilegridcell_20" class="mobilegridcell11" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div name="mobilelabel1_25" id="j_69" dsid="mobilelabel1_25" data-role="tiggr_label"
+                                                                                                class='labelClass mobilelabel16 '>
+                                                                                                    US$ 550
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="mobilegrid5_row_1">
+                                                                                        <td id="j_70" name="mobilegridcell_22" class="mobilegridcell12" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div name="mobilelabel1_29" id="j_71" dsid="mobilelabel1_29" data-role="tiggr_label"
+                                                                                                class='labelClass mobilelabel17 '>
+                                                                                                    Cant: 10
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="mobilegrid5_row_2">
+                                                                                        <td id="j_72" name="mobilegridcell_28" class="mobilegridcell13" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div name="mobilelabel1_36" id="j_73" dsid="mobilelabel1_36" data-role="tiggr_label"
+                                                                                                class='labelClass mobilelabel18 '>
+                                                                                                    S.Total: $5.500
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="mobilegrid2_row_1">
+                                    <td id="j_54" name="mobilegridcell_40" class="mobilegridcell4" colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <div name="mobilelabel1_58" id="j_55" dsid="mobilelabel1_58" data-role="tiggr_label"
+                                            class='labelClass mobilelabel13 '>
+                                                2
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="j_74" name="mobilegridcell_45" class="mobilegridcell14" colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <div class="mobilegrid6_wrapper">
+                                                <table id="j_75" class="mobilegrid mobilegrid6" dsid="mobilegrid_47" name="mobilegrid_47"
+                                                cellpadding=0 cellspacing=0>
+                                                    <col style="width:auto;">
+                                                        <col style="width:35%;">
+                                                            <tr class="mobilegrid6_row_0">
+                                                                <td id="j_76" name="mobilegridcell_48" class="mobilegridcell15" colspan=1 rowspan=1>
+                                                                    <div class="cell-wrapper">
+                                                                        <div class="mobilegrid7_wrapper">
+                                                                            <table id="j_77" class="mobilegrid mobilegrid7" dsid="mobilegrid_60" name="mobilegrid_60"
+                                                                            cellpadding=0 cellspacing=0>
+                                                                                <col style="width:50%;">
+                                                                                    <tr class="mobilegrid7_row_0">
+                                                                                        <td id="j_78" name="mobilegridcell_61" class="mobilegridcell16" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div class="mobileimage6_div">
+                                                                                                    <img class="mobileImage mobileimage6" src="files/views/assets/image/45675A7E-38F6-6B87-DB58-BEA4D4B446E9"
+                                                                                                    id="j_79" dsid="mobileimage_82" name="mobileimage_82" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="mobilegrid7_row_1">
+                                                                                        <td id="j_80" name="mobilegridcell_63" class="mobilegridcell17" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div name="mobilelabel1_91" id="j_81" dsid="mobilelabel1_91" data-role="tiggr_label"
+                                                                                                class='labelClass mobilelabel19 '>
+                                                                                                    MW1-10186-092
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="j_82" name="mobilegridcell_49" class="mobilegridcell18" colspan=1 rowspan=1>
+                                                                    <div class="cell-wrapper">
+                                                                        <div class="mobilegrid8_wrapper">
+                                                                            <table id="j_83" class="mobilegrid mobilegrid8" dsid="mobilegrid_70" name="mobilegrid_70"
+                                                                            cellpadding=0 cellspacing=0>
+                                                                                <col style="width:50%;">
+                                                                                    <tr class="mobilegrid8_row_0">
+                                                                                        <td id="j_84" name="mobilegridcell_71" class="mobilegridcell19" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div name="mobilelabel1_84" id="j_85" dsid="mobilelabel1_84" data-role="tiggr_label"
+                                                                                                class='labelClass mobilelabel20 '>
+                                                                                                    US$ 475
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="mobilegrid8_row_1">
+                                                                                        <td id="j_86" name="mobilegridcell_73" class="mobilegridcell20" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div name="mobilelabel1_85" id="j_87" dsid="mobilelabel1_85" data-role="tiggr_label"
+                                                                                                class='labelClass mobilelabel21 '>
+                                                                                                    Cant: 5
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="mobilegrid8_row_2">
+                                                                                        <td id="j_88" name="mobilegridcell_75" class="mobilegridcell21" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div name="mobilelabel1_86" id="j_89" dsid="mobilelabel1_86" data-role="tiggr_label"
+                                                                                                class='labelClass mobilelabel22 '>
+                                                                                                    S.Total: $2.375
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="mobilegrid2_row_2">
+                                    <td id="j_56" name="mobilegridcell_42" class="mobilegridcell5" colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <div name="mobilelabel1_59" id="j_57" dsid="mobilelabel1_59" data-role="tiggr_label"
+                                            class='labelClass mobilelabel14 '>
+                                                3
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="j_90" name="mobilegridcell_46" class="mobilegridcell22" colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <div class="mobilegrid9_wrapper">
+                                                <table id="j_91" class="mobilegrid mobilegrid9" dsid="mobilegrid_52" name="mobilegrid_52"
+                                                cellpadding=0 cellspacing=0>
+                                                    <col style="width:auto;">
+                                                        <col style="width:35%;">
+                                                            <tr class="mobilegrid9_row_0">
+                                                                <td id="j_92" name="mobilegridcell_53" class="mobilegridcell23" colspan=1 rowspan=1>
+                                                                    <div class="cell-wrapper">
+                                                                        <div class="mobilegrid10_wrapper">
+                                                                            <table id="j_93" class="mobilegrid mobilegrid10" dsid="mobilegrid_65" name="mobilegrid_65"
+                                                                            cellpadding=0 cellspacing=0>
+                                                                                <col style="width:50%;">
+                                                                                    <tr class="mobilegrid10_row_0">
+                                                                                        <td id="j_94" name="mobilegridcell_66" class="mobilegridcell24" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div class="mobileimage7_div">
+                                                                                                    <img class="mobileImage mobileimage7" src="files/views/assets/image/4A5E6B7A-C35E-A074-EA23-4A3DE9B5DFBF"
+                                                                                                    id="j_95" dsid="mobileimage_83" name="mobileimage_83" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="mobilegrid10_row_1">
+                                                                                        <td id="j_96" name="mobilegridcell_68" class="mobilegridcell25" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div name="mobilelabel1_90" id="j_97" dsid="mobilelabel1_90" data-role="tiggr_label"
+                                                                                                class='labelClass mobilelabel23 '>
+                                                                                                    MW1-29903-013
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td id="j_98" name="mobilegridcell_54" class="mobilegridcell26" colspan=1 rowspan=1>
+                                                                    <div class="cell-wrapper">
+                                                                        <div class="mobilegrid11_wrapper">
+                                                                            <table id="j_99" class="mobilegrid mobilegrid11" dsid="mobilegrid_76" name="mobilegrid_76"
+                                                                            cellpadding=0 cellspacing=0>
+                                                                                <col style="width:50%;">
+                                                                                    <tr class="mobilegrid11_row_0">
+                                                                                        <td id="j_100" name="mobilegridcell_77" class="mobilegridcell27" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div name="mobilelabel1_87" id="j_101" dsid="mobilelabel1_87" data-role="tiggr_label"
+                                                                                                class='labelClass mobilelabel24 '>
+                                                                                                    US$ 485
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="mobilegrid11_row_1">
+                                                                                        <td id="j_102" name="mobilegridcell_79" class="mobilegridcell28" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div name="mobilelabel1_89" id="j_103" dsid="mobilelabel1_89" data-role="tiggr_label"
+                                                                                                class='labelClass mobilelabel25 '>
+                                                                                                    Cant: 8
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="mobilegrid11_row_2">
+                                                                                        <td id="j_104" name="mobilegridcell_81" class="mobilegridcell29" colspan=1 rowspan=1>
+                                                                                            <div class="cell-wrapper">
+                                                                                                <div name="mobilelabel1_88" id="j_105" dsid="mobilelabel1_88" data-role="tiggr_label"
+                                                                                                class='labelClass mobilelabel26 '>
+                                                                                                    S.Total: $3.880
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                    </table>
+                </div>
+            </div>
+            <div data-role="footer" class="mobileFooter mobilefooter6" name="mobilefooter1"
+            dsid="mobilefooter1" data-position="fixed" id="j_13" data-theme='a'>
+            </div>
+        </div>
+    </body>
+
+</html>
